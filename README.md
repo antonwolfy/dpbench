@@ -21,14 +21,14 @@ SPDX-License-Identifier: Apache-2.0
 
 ### Using prebuilt version
 
-1. Create conda environment
+1. Create conda environment:
 
     ```bash
     conda create -n dpbench dpbench -c dppy/label/dev -c conda-forge -c https://software.repos.intel.com/python/conda -c nodefaults --override-channels
     conda activate dpbench
     ```
 
-2. Run specific benchmark, e.g. black_scholes
+2. Run specific benchmark, e.g. black_scholes:
 
     ```bash
     dpbench -b black_scholes run
@@ -54,7 +54,7 @@ SPDX-License-Identifier: Apache-2.0
     conda env create -n dpbench -f ./environments/conda-linux-sycl.yml
     ```
 
-3. Build DPBench
+3. Build DPBench:
 
     ```bash
     pip install --no-index --no-deps --no-build-isolation -e . -v
@@ -77,7 +77,7 @@ SPDX-License-Identifier: Apache-2.0
     CC=icx CXX=icpx DPBENCH_SYCL=1 python setup.py develop
     ```
 
-4. Run specific benchmark, e.g. black_scholes
+4. Run specific benchmark, e.g. black_scholes:
 
     ```bash
     dpbench -b black_scholes run
@@ -85,19 +85,19 @@ SPDX-License-Identifier: Apache-2.0
 
 ### Usage
 
-1. Run all benchmarks
+1. Run all benchmarks:
 
     ```bash
     dpbench -a run
     ```
 
-2. Generate report
+2. Generate report:
 
     ```bash
     dpbench report
     ```
 
-3. Device Customization
+3. Device Customization:
 
    If a framework is SYCL based, an extra configuration option
    `sycl_device` may be set in the framework config file or by passing
