@@ -20,7 +20,5 @@ dependencies:
   - pandas
   - intel-opencl-rt # need for set-intel-ocl-icd-registry.ps1
   - numpy
-  - numba
   - dpctl
   - dpnp
-  - numba-dpex>=0.23.0*
