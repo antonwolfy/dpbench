@@ -30,3 +30,5 @@ def black_scholes(nopt, price, strike, t, rate, volatility, call, put):
 
     call[:] = P * d1 - Se * d2
     put[:] = call - P + Se
+
+    np.synchronize_array_data(put)
